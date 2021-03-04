@@ -1,3 +1,10 @@
+'''
+To run, will need to install:
+requests
+bs4
+lxml
+'''
+
 import requests
 import bs4
 
