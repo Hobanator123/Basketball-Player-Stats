@@ -73,7 +73,7 @@ url = ask_player(name)
 res = requests.get(url)
 soup = bs4.BeautifulSoup(res.text, 'lxml')
 
-# Makes sure it has right person (Kemba != Kenny)
+# Makes sure it has right person  e.g. Kemba != Kenny
 while soup.select("span")[8].getText().lower() != name.lower():  # [8] is the span tag with the name of the player
 	url = ask_player(name)
 	res = requests.get(url)
